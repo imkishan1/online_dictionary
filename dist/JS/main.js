@@ -83,7 +83,7 @@ function buildData(data,sinput)
         }
         // phonetics
 
-        console.log("Audio Link: ",audio);
+        // console.log("Audio Link: ",audio);
 
         for(let i=0;i<5;i++)
         {
@@ -99,7 +99,7 @@ function buildData(data,sinput)
             }
         }
 
-        console.log(data);
+        // console.log(data);
     }
 }
 
