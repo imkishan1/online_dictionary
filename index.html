@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Dictionary</title>
+</head>
+<body>
+    <div class="container-flex">
+
+        <div class="card-base">
+            <header>
+                <h2>Dictionary</h2>
+                <button id="theme-btn">
+                    <i class="ri-sun-line"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+            </header>
+            <article>
+                <div class="search-bar">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="search-content" placeholder="Search...">
+                    <i id="removeIcon" class="ri-close-line icon-abs"></i>
+                </div>
+                <p class="info">Type a word and press enter to search its meaning.</p>
+            </article>
+                <ul>
+                    <div class="fixed">
+                    <li>
+                        <div class="info-part">
+                            <p id="search-word" class="heading"></p>
+                            <span id="phonetics"></span>
+                        </div>
+                        <i id="volume-btn" class="ri-volume-up-line"></i>
+                    </li>
+                    <div class="hr"></div>
+                </div>
+                    <li>
+                        <div class="info-part">
+                            <p>Meaning</p>
+                            <span id="meaning" class="meaning-text"></span>
+                        </div>
+
+                    </li>
+                    <div class="hr"></div>
+                    <li id="examples">
+                        <div class="info-part">
+                            <p>Example</p>
+                            <span id="example" class="meaning-text"></span>
+                        </div>
+
+                    </li>
+                    <div class="hr"></div>
+                    <li id="syn">
+                        <div class="info-part">
+                            <p>Synonyms</p>
+                            <span id="syno" class="meaning-text underline"></span>
+                        </div>
+
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="credit">
+            <p>Made with ❤️ Kisalaya</p>
+        </div>
+    </footer>
+    <script src="./dist/JS/main.js"></script>
+</body>
+</html>

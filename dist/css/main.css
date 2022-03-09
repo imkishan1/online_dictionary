@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.card-base {
+  max-width: 350px;
+  width: 100%;
+  background-color: #2F3733;
+  border-radius: 0.8rem;
+  color: #F5F8FD;
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+
+.card-base.active ul {
+  max-width: 350px;
+  display: block;
+  min-height: 320px;
+  opacity: 1;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-base.active ul::-webkit-scrollbar {
+  display: none;
+}
+
+.card-base.active .info {
+  display: none;
+}
+
+.card-base ul {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-base header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-base header h2 {
+  font-weight: 500;
+}
+
+.card-base header button {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-base header button i {
+  color: #A8B1C4;
+  font-size: 2.2rem;
+}
+
+.card-base header button i:hover {
+  color: #F5F8FD;
+  -webkit-animation: 0.3s rotate;
+          animation: 0.3s rotate;
+}
+
+.card-base article {
+  width: 100%;
+  margin-top: 1.8rem;
+}
+
+.card-base article .search-bar {
+  padding: 0 1rem;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border-radius: .5rem;
+  border: 2px solid rgba(194, 194, 194, 0.692);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.card-base article .search-bar input {
+  width: 100%;
+  height: 30px;
+  font-weight: 400;
+}
+
+.card-base article .search-bar input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.card-base article .search-bar input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.card-base article .search-bar input::-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.card-base article .search-bar input::placeholder {
+  color: #8a8a8a;
+}
+
+.card-base article .search-bar i {
+  color: #F5F8FD;
+}
+
+.card-base article .search-bar:focus-within {
+  border: 2px solid #0B9D5D;
+}
+
+.card-base article .search-bar:focus-within i {
+  color: #0B9D5D;
+}
+
+.card-base article .info {
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+  color: #8a8a8a;
+  text-align: left;
+}
+
+.card-base article .info span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.icon-abs {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.moon-icon {
+  display: none;
+}
+
+i {
+  color: #A8B1C4;
+  -webkit-transition: color .25s ease;
+  transition: color .25s ease;
+}
+
+input,
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.fixed {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background: #2F3733;
+  border-radius: 0 !important;
+  padding-bottom: 0.2rem;
+}
+
+#volume-btn {
+  -webkit-transition: 0s 1s;
+  transition: 0s 1s;
+}
+
+#volume-btn:active {
+  color: #0B9D5D;
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+}
+
+ul {
+  margin-top: 2.2rem;
+  overflow-y: auto;
+}
+
+ul li {
+  padding-block: 0.6rem;
+  padding-left: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.6rem;
+  border-radius: 0.5rem;
+  max-width: 350px;
+  border-left: 3px solid #0B9D5D;
+}
+
+ul li span {
+  font-size: 1.2rem;
+  color: rgba(194, 194, 194, 0.692);
+}
+
+ul li i {
+  font-size: 2.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.25s color ease;
+  transition: 0.25s color ease;
+}
+
+ul li i:hover {
+  color: #F5F8FD;
+}
+
+ul li .info-part {
+  max-width: 350px;
+}
+
+ul li .info-part .heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+ul li .info-part p {
+  font-size: 1.6rem;
+}
+
+ul li .info-part .meaning-text {
+  font-size: 1.2rem;
+  width: 350px;
+}
+
+ul li:nth-child(1) {
+  padding: 0;
+  border: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins';
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #F2F3F2;
+  background-color: #1C211F;
+  -webkit-transition: background-color .25s, color .25;
+  transition: background-color .25s, color .25;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0px 10px;
+}
+
+.container-flex {
+  width: 100%;
+  min-height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.hr {
+  height: 1px;
+  background-color: rgba(194, 194, 194, 0.2);
+  width: 100%;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+footer .credit {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer .credit p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #C6CEDB;
+}
+
+.display-none {
+  display: none !important;
+}
+
+#removeIcon {
+  display: none;
+  -webkit-transition: .25s all ease-in;
+  transition: .25s all ease-in;
+}
+/*# sourceMappingURL=main.css.map */
