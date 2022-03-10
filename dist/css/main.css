@@ -121,7 +121,7 @@
   border: 2px solid #0B9D5D;
 }
 
-.card-base article .search-bar:focus-within i {
+.card-base article .search-bar:focus-within .green {
   color: #0B9D5D;
 }
 
@@ -142,6 +142,13 @@
   right: 1rem;
   font-size: 1.8rem;
   cursor: pointer;
+  color: #8a8a8a !important;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+.icon-abs:hover {
+  color: #fff !important;
 }
 
 .moon-icon {

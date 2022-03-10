@@ -88,7 +88,7 @@
            
             border: 2px solid $secondry-color-dark-hover;
         }
-        .search-bar:focus-within i{
+        .search-bar:focus-within .green{
                 color: $secondry-color-dark-hover;
         }
         .info{
@@ -109,7 +109,13 @@
     right: 1rem;
     font-size: 1.8rem;
     cursor: pointer;
+    color: #8a8a8a !important;
+    transition: .2s all ease-in-out;
 
+}
+.icon-abs:hover{
+    color: #fff !important;
+    
 }
 
 .moon-icon{
